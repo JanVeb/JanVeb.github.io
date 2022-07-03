@@ -23,7 +23,10 @@ function App() {
       <div>
          {/* <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></link> */}
         {/* <button class="fa fa-bars" className="menuButton" style={{position: 'absolute', top: '20px', left: '20px', zIndex: 3, fontSize: '80px'}} onClick={PopUpMenu}></button> */}
-        <i class="fa fa-list" onClick={PopUpMenu} style={{position: 'absolute', top: '20px', left: '20px', zIndex: 3, fontSize: '80px', background: 'white'}}>&nbsp;</i>
+        <button id="button"
+        variant="outlined"
+        class="fa fa-list" 
+        onClick={PopUpMenu} style={{position: 'fixed', top: '20px', left: '20px', zIndex: 3, fontSize: '50px'}}>&nbsp;</button>
        <Dandelion />
          <Firefly />
          {/* <Menu /> */}

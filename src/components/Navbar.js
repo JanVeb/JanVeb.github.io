@@ -66,25 +66,28 @@ export default function Navbar({darkMode, handleClick, animationOnOff, setanimat
           zIndex: '2',
           color: 'white',
           backgroundSize: 'cover',
-          backgroundColor: 'rgba(0, 0, 0, 0.9)'
+          backgroundColor: 'rgba(30, 30, 30, 0.9)',
+          userSelect: 'none',
           }}
           >
             
-        <Box component={'nav'} padding={'40px'} marginTop={'100px'}>
+        <Box component={'nav'} margin={'20px'} marginTop={'100px'} userSelect={'none'}>
             <Box component={'ul'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
-                 textTransform={'lowercase'} fontSize={'4rem'}>
+                 textTransform={'lowercase'} fontSize={'3vh'}>
                 {links.map(link => (
                     <Link to={link.to} onClick={() => setActive(link.active)}>
-                        <Box component={'li'} className={(link.active === active && !link.type) && Style.active} sx={{borderImageSource: info.gradient }}>
+                        <Box component={'li'} className={(link.active === active && !link.type) && Style.active} sx={{borderImageSource: info.gradient }} paddingTop={'10px'} userSelect={'none'}>
                             {!link.type && <p style={{paddingBottom: '0.5rem'}}>{link.name}</p>}
                             {link.type && <h1>{link.name}</h1>}
                         </Box>
                     </Link>
                 ))}
-                <Toggler darkMode={darkMode} handleClick={handleClick}/>
- 
-                <p id="disTextSel" onClick={() => setActive(AnimationOnOff())} style={{ userSelect: 'none'}}><span>animation: </span><span>{animationOnOff}</span>  </p>
+                <hr style={{width: '100%', textAlign: 'left', marginLeft: 0,  padding: '10px'}}></hr>
+                <div style={{ userSelect: 'none', paddingTop: '10px'}}>
+                <Toggler style={{ userSelect: 'none'}} darkMode={darkMode} handleClick={handleClick}/>
+                </div>
+                <p id="disTextSel" onClick={() => setActive(AnimationOnOff())} style={{ userSelect: 'none', paddingTop: '10px'}}><span>animation: </span><span>{animationOnOff}</span>  </p>
             </Box>
         </Box>
         </div>
