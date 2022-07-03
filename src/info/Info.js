@@ -61,6 +61,10 @@ export const info = {
         {
             link: "http://discordapp.com/users/688383456270614529",
             icon: "fab fa-discord"
+        },
+        {
+            link: "https://play.google.com/store/apps/developer?id=IndieLearning+Team&gl=DE",
+            icon: "fab fa-google-play"
         }
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.

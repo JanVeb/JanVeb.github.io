@@ -83,7 +83,8 @@ export default function Navbar({darkMode, handleClick, animationOnOff, setanimat
                         </Box>
                     </Link>
                 ))}
-                <hr style={{width: '100%', textAlign: 'left', marginLeft: 0,  padding: '10px'}}></hr>
+                <br></br>
+                <hr style={{width: '100%', textAlign: 'left', marginLeft: 0}}></hr>
                 <div style={{ userSelect: 'none', paddingTop: '10px'}}>
                 <Toggler style={{ userSelect: 'none'}} darkMode={darkMode} handleClick={handleClick}/>
                 </div>
