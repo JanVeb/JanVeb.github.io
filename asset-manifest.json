@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c557927.css",
-    "main.js": "/static/js/main.6e42912f.js",
+    "main.css": "/static/css/main.fc24d4d4.css",
+    "main.js": "/static/js/main.828119d0.js",
     "static/media/mock5.png": "/static/media/mock5.7a3de7b6c7393f774688.png",
-    "static/media/mock2.png": "/static/media/mock2.8a48c2786cbe7da6ec20.png",
-    "static/media/mock1.png": "/static/media/mock1.8ff51d7cd8d9aac8438b.png",
+    "static/media/RecCal.gif": "/static/media/RecCal.1ea88924d6ffc6c1ca42.gif",
+    "static/media/PianoFlash3.gif": "/static/media/PianoFlash3.e919ad33a105013e50cc.gif",
+    "static/media/PianoFlash3.png": "/static/media/PianoFlash3.27beb2390a93b8b7bf03.png",
     "static/media/self.png": "/static/media/self.52a72da27914b6e7901c.png",
-    "static/media/mock3.png": "/static/media/mock3.31de5674e49dc85c50a9.png",
     "static/media/mock4.png": "/static/media/mock4.e827ecc72e66a6479292.png",
     "index.html": "/index.html",
-    "main.5c557927.css.map": "/static/css/main.5c557927.css.map",
-    "main.6e42912f.js.map": "/static/js/main.6e42912f.js.map"
+    "main.fc24d4d4.css.map": "/static/css/main.fc24d4d4.css.map",
+    "main.828119d0.js.map": "/static/js/main.828119d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c557927.css",
-    "static/js/main.6e42912f.js"
+    "static/css/main.fc24d4d4.css",
+    "static/js/main.828119d0.js"
   ]
 }
