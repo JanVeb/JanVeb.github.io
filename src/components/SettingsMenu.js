@@ -67,6 +67,10 @@ export default function Settings({
     localStorage.setItem('settings', JSON.stringify(settings));
   }
 
+  function StopPlay() {
+    window.StopPlay();
+  }
+
   return (
     <div
       class="menu"
@@ -86,7 +90,7 @@ export default function Settings({
       <div
         class="menu"
         style={{
-          marginTop: '50px',
+          marginTop: '10px',
           padding: '50px',
         }}
       >
@@ -104,6 +108,7 @@ export default function Settings({
           <span>animation: </span>
           <span>{animationOnOff}</span>{' '}
         </p>
+        {/* <button onClick={StopPlay}>Stop</button> */}
       </div>
     </div>
   );

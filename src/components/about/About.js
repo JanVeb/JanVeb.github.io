@@ -15,11 +15,11 @@ export default function About() {
             {firstName}
             {info.lastName.toLowerCase()} $
           </span>{' '}
-          cat about{firstName}{' '}
+          cat about {firstName}{' '}
         </p>
         <p>
           <span style={{ color: info.baseColor }}>
-            about{firstName} <span className={Style.green}>(main)</span> ${' '}
+            about {firstName} <span className={Style.green}>(main)</span> ${' '}
           </span>
           {info.bio}
         </p>
@@ -52,6 +52,12 @@ export default function About() {
         <p style={{ color: info.baseColor }}> Exposed To</p>
         <ul className={Style.skills}>
           {info.skills.exposedTo.map((skill) => (
+            <li>{skill}</li>
+          ))}
+        </ul>
+        <p style={{ color: info.baseColor }}> Intrested in</p>
+        <ul className={Style.skills}>
+          {info.skills.intrestedIn.map((skill) => (
             <li>{skill}</li>
           ))}
         </ul>

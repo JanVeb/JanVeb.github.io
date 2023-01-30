@@ -13,11 +13,15 @@ export default function Portfolio() {
         marginTop={'75px'}
       >
         {info.portfolio.map((project) => (
-          <Grid item xs={8} md={8}>
+          <Grid item xs={12} md={8}>
             <PortfolioBlock
               image={project.image}
               live={project.live}
+              inDev={project.inDev}
+              netlify={project.netlify}
               source={project.source}
+              youtube={project.youtube}
+              info={project.info}
               title={project.title}
             />
           </Grid>

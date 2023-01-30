@@ -28,7 +28,7 @@ export default function Dandelion() {
         this.radians = 0;
       }
       draw() {
-        let long = this.radius * 20;
+        let long = this.radius * 15; //let long = this.radius * 15; size of dandelion
         let cutLong = long / 10;
         c.beginPath();
         c.strokeStyle = '#fff';

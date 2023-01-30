@@ -1,9 +1,9 @@
 import self from '../img/self.png';
-import mock1 from '../img/PianoFlash3.gif';
-import mock2 from '../img/RecCal.gif';
-import mock3 from '../img/PianoFlash3.png';
-import mock4 from '../img/mock4.png';
-import mock5 from '../img/mock5.png';
+import mock1 from '../img/PF2.gif';
+import mock2 from '../img/RC2.gif';
+import mock3 from '../img/IL20.gif';
+// import mock4 from '../img/mock4.png';
+// import mock5 from '../img/mock5.png';
 
 // let mock1 = <div id="smartphone"></div>;
 
@@ -23,11 +23,37 @@ that might not be obvious right off the bat :) I recommend looking at the templa
 of what each of the values mean.
  */
 
+let myBio = (
+  <p>
+    ​​Since 2002, when I paused my school in Croatia, I've started to actively
+    work, mostly in the tourism and hospitality sector. In 2006 I moved to
+    Slovenia and in 2007 I enrolled in Philosophy and next year for a Psychology
+    bachelor degree. In 2012 I've moved to Munich, Germany. In Germany, through
+    Kruschina agency I've worked in big international companies, such as Intel,
+    Microsoft, Allianz Arena, BMW, IBM, and others,
+    <br></br>
+    <br></br>
+    In 2019, while studying Chinese at National Taiwan Normal University, I met
+    Phillip Schluetermann, trained Javascript developer, and we started to
+    develop a Chinese learning app. Since it was too expensive for us to develop
+    good quality Chinese audio learning materials, we stopped working on this
+    project. I've started learning Flutter, developed dozens of projects in it
+    for learning purposes, and started to develop a Piano Learning app in it as
+    well, though, due to lack of functional music sheet plugins in Dart
+    language, I've started to develop this project in Javascript instead. Piano
+    Flashcard app is a great project in that it was almost free to create,
+    learning materials, such as countless great music scores are in public
+    domain and therefore, was able to use them free of charge in the project. In
+    July of 2021 I started working remotely for Company Kobilica from Croatia,
+    mostly working on mobile development in Javascript and Dart languages.
+  </p>
+);
+
 export const info = {
   firstName: 'Jani',
   lastName: 'Veble',
   initials: 'jv', // the example uses first and last, but feel free to use three or more if you like.
-  position: 'a Full Stack Developer',
+  position: `a Mobile Web App and Web Developer`,
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
@@ -39,11 +65,11 @@ export const info = {
     },
     {
       emoji: '🌎',
-      text: 'based in the Taiwan',
+      text: 'based in Taiwan',
     },
     {
       emoji: '💼',
-      text: 'Teaching English',
+      text: 'Mobile Web App / PWA, Web Developer, English Teacher',
     },
     {
       emoji: '📧',
@@ -67,40 +93,46 @@ export const info = {
       link: 'https://play.google.com/store/apps/developer?id=IndieLearning+Team&gl=DE',
       icon: 'fab fa-google-play',
     },
-    // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-    // Just change the links so that they lead to your social profiles.
   ],
-  bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+  bio: myBio,
+
   skills: {
-    proficientWith: [
-      'javascript',
-      'react',
-      'git',
-      'github',
-      'bootstrap',
-      'html5',
-      'css3',
-      'figma',
+    proficientWith: ['javascript', 'react', 'github', 'html5', 'css3', 'trie'],
+    exposedTo: [
+      'nodejs',
+      'dart',
+      'flutter',
+      'lua',
+      'audacity',
+      'gimp',
+      'inkscape',
+      'big data processing',
     ],
-    exposedTo: ['nodejs', 'python', 'adobe illustrator'],
+    intrestedIn: ['python', 'ai', 'quantum computing'],
   },
   hobbies: [
     {
-      label: 'reading',
-      emoji: '📖',
+      label:
+        'used to have many hobies before starting to program, now days have only time for sports',
+      emoji: '⌨️',
     },
     {
-      label: 'theater',
-      emoji: '🎭',
+      label: 'hiking',
+      emoji: '🥾',
     },
     {
-      label: 'movies',
-      emoji: '🎥',
+      label: 'walking',
+      emoji: '🚶‍♂️',
     },
     {
-      label: 'cooking',
-      emoji: '🌶',
+      label: 'roller skateing',
+      emoji: '🛼',
     },
+    {
+      label: 'biking',
+      emoji: '🚴‍♂️',
+    },
+
     // Same as above, change the emojis to match / relate to your hobbies or interests.
     // You can also remove the emojis if you'd like, I just think they look cute :P
   ],
@@ -108,32 +140,25 @@ export const info = {
     // This is where your portfolio projects will be detailed
     {
       title: 'Piano Flashcards',
-      live: 'https://play.google.com/store/apps/details?id=org.example.pianotrainer&gl=DE', //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+      live: 'https://play.google.com/store/apps/details?id=org.example.pianotrainer&gl=DE',
+      inDev: 'https://piano-flashcards.github.io/',
+      youtube: 'https://www.youtube.com/watch?v=6JldTapSEZI',
+      info: 'ℹ️ Developed with ReactJs, Ionic, CapacitorJs, Javascript',
       image: mock1,
     },
     {
       title: 'Recipe Calculator',
       live: 'https://recipecalculator.netlify.app/#/',
+      netlify: 'https://recipecalculator.netlify.app/#/',
       source: 'https://github.com/JanVeb/recipe_calculator',
+      info: 'ℹ️ Developed with Flutter and Dart',
       image: mock2,
     },
-    // {
-    //   title: 'Project 3',
-    //   live: 'https://recipecalculator.netlify.app/#/',
-    //   source: 'https://github.com/JanVeb/recipe_calculator',
-    //   image: mock3,
-    // },
-    // {
-    //   title: 'Project 4',
-    //   live: 'https://paytonpierce.dev',
-    //   source: 'https://github.com/paytonjewell',
-    //   image: mock4,
-    // },
-    // {
-    //   title: 'Project 5',
-    //   live: 'https://paytonpierce.dev',
-    //   source: 'https://github.com/paytonjewell',
-    //   image: mock5,
-    // },
+    {
+      title: 'IndieLearningApp',
+      live: 'https://play.google.com/store/apps/details?id=de.schluetermann.philipp.indielearning&hl=gsw&gl=US',
+      info: 'ℹ️ Developed with Vue, Cordova, Ionic, and Javascript',
+      image: mock3,
+    },
   ],
 };

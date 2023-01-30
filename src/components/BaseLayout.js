@@ -118,13 +118,7 @@ export default function BaseLayout() {
               py={'1.5rem'}
               sx={{ opacity: 0.4 }}
               width={'100%'}
-            >
-              <p>
-                template created with &hearts; by{' '}
-                <a href={'https://paytonpierce.dev'}>Payton Pierce</a>
-              </p>
-              <p>&copy; 2022</p>
-            </Box>
+            ></Box>
           </Grid>
         </Grid>
       </Box>

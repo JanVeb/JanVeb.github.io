@@ -36,8 +36,8 @@ export default function Home() {
           <span
             style={{
               background: info.gradient,
-              webkitBackgroundClip: 'text',
-              webkitTextFillColor: 'transparent',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
             }}
           >
             {info.firstName}
